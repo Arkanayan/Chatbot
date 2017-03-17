@@ -32,8 +32,10 @@ dob_input = 'dob'
 
 
 @app.route('/getDetails', methods=['POST'])
-def getDetails():
+def get_details():
     """
+    Url format: www.whatever.com/getDetails
+    method: POST
     Takes two POST inputs;
     'name' -> name of the person,
     'dob' -> date of birth of the person
