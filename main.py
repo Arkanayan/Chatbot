@@ -44,7 +44,7 @@ def get_details():
     if request.method == 'POST':
         name = request.form.get(name_input, None)
         dob = request.form.get(dob_input, None)
-        if name is None and dob is None:
+        if name is None or dob is None:
             return jsonify(get_error_format("Please check your inputs")), 400
 
     return jsonify(get_message_format(name, get_random_message()))
