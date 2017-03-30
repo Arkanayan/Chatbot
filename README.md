@@ -1,6 +1,6 @@
 # Instructions
  The url endpoint is 
- - www.website.com/**getDetails**
+ - www.website.com/getDetails
 
  **POST** inputs:
 - `name`: name of the person
